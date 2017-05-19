@@ -1,6 +1,6 @@
 ﻿namespace Example13
 {
-    partial class Form1
+    partial class Whileループ
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnExec = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnExec
+            // 
+            this.btnExec.Location = new System.Drawing.Point(35, 50);
+            this.btnExec.Name = "btnExec";
+            this.btnExec.Size = new System.Drawing.Size(190, 102);
+            this.btnExec.TabIndex = 0;
+            this.btnExec.Text = "繰り返し";
+            this.btnExec.UseVisualStyleBackColor = true;
+            this.btnExec.Click += new System.EventHandler(this.btnExec_Click);
+            // 
+            // Whileループ
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnExec);
+            this.Name = "Whileループ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "WHILEループ";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnExec;
     }
 }
 
